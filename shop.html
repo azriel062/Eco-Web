@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <div class="header__contact">
+            <span>(+62) - 085787873449</span>
+            <span>Lokasi saat ini</span>
+          </div>
+
+          <p class="header__alert news">
+            Diskon hari ini - Pelajari lebih lanjut
+          </p>
+
+          <a href="login-register.html" class="header__top-action">
+            Log In / Sign Up
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/Logo1.svg" alt="" class="nav__logo-img" />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link active-link">Shop</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="accounts.html" class="nav__link">My Account</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="compare.html" class="nav__link">Compare</a>
+              <!-- Mengganti "Comapare" menjadi "Compare" -->
+            </li>
+
+            <li class="nav__item">
+              <a href="login-register.html" class="nav__link">Login</a>
+            </li>
+          </ul>
+
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="Mencari Sebuah Item..."
+              class="form__input"
+            />
+
+            <button class="search__btn">
+              <img src="assets/img/search.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="header__user-actions">
+          <a href="wishlist.html" class="header__action-btn">
+            <img src="assets/img/icon-heart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+          <a href="cart.html" class="header__action-btn">
+            <img src="assets/img/icon-cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Shop</span></li>
+        </ul>
+      </section>
+
+      <!--=============== PRODUCTS ===============-->
+      <section class="products section--lg container">
+        <p class="total__products">
+          Kita Menemukan ada <span>300</span> Jenis Barang Untuk Anda!
+        </p>
+
+        <div class="products__container grid">
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details1.html" class="product__images">
+                <img
+                  src="assets/img/product-1-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+              <a href="details1.html" class="product__images">
+                <img
+                  src="assets/img/product-1-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a
+                  href="details1.html"
+                  class="action__btn"
+                  aria-label="Quick View"
+                >
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="wishlist.html"
+                  class="action__btn add-to-wishlist-btn"
+                  aria-label="Add To Wishlist"
+                  data-id="1"
+                  data-title="Pakaian Motif Jamur"
+                  data-price="200"
+                  data-img="assets/img/product-1-1.jpg"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="compare.html" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-pink">Hot</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Pakaian</span>
+              <a href="details1.html">
+                <h3 class="product__title">Pakaian Motif Jamur</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">200.00</span>
+                <span class="old__price">225.00</span>
+              </div>
+              <a
+                href="cart.html"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+                data-id="1"
+                data-title="Pakaian Motif Jamur"
+                data-price="200"
+                data-img="assets/img/product-1-1.jpg"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details1.html" class="product__images">
+                <img
+                  src="assets/img/product-2-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-2-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+
+                <a
+                  href="wishlist.html"
+                  class="action__btn add-to-wishlist-btn"
+                  aria-label="Add To Wishlist"
+                  data-id="2"
+                  data-title="Pakaian Motif Bewarna"
+                  data-price="215.10"
+                  data-img="assets/img/product-2-1.jpg"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+
+              <div class="product__badge light-green">Hot</div>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product__title">Pakaian Motif Bewarna</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">238.85</span>
+                <span class="old__price">245.85</span>
+              </div>
+
+              <a
+                href="cart.html"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+                data-id="2"
+                data-title="Pakaian Motif Bewarna"
+                data-price="215.10"
+                data-img="assets/img/product-2-1.jpg"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-3-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-3-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+
+                <a
+                  href="wishlist.html"
+                  class="action__btn add-to-wishlist-btn"
+                  aria-label="Add To Wishlist"
+                  data-id="3"
+                  data-title="Sepatu Clasic Trendy"
+                  data-price="350"
+                  data-img="assets/img/product-3-1.jpg"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+
+              <div class="product__badge light-orange">Hot</div>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product__title">Pakaian Motif Bewarna</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">238.85</span>
+                <span class="old__price">245.85</span>
+              </div>
+
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+                data-id="3"
+                data-title="Sepatu Clasic Trendy"
+                data-price="350"
+                data-img="assets/img/product-3-1.jpg"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-4-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-4-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+
+                <a
+                  href="wishlist.html"
+                  class="action__btn add-to-wishlist-btn"
+                  aria-label="Add To Wishlist"
+                  data-id="4"
+                  data-title="Celana Krem untuk Casual"
+                  data-price="150"
+                  data-img="assets/img/product-4-1.jpg"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+
+              <div class="product__badge light-blue">Hot</div>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product__title">Pakaian Motif Bewarna</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">238.85</span>
+                <span class="old__price">245.85</span>
+              </div>
+
+              <a
+                href="cart.html"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+                data-id="4"
+                data-title="Celana Krem untuk Casual"
+                data-price="150"
+                data-img="assets/img/product-4-1.jpg"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-5-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-5-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+
+                <a
+                  href="wishlist.html"
+                  class="action__btn add-to-wishlist-btn"
+                  aria-label="Add To Wishlist"
+                  data-id="5"
+                  data-title="Kupluk Trendy"
+                  data-price="100"
+                  data-img="assets/img/product-5-1.jpg"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+
+              <div class="product__badge light-pink">-30%</div>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product__title">Pakaian Motif Bewarna</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">238.85</span>
+                <span class="old__price">245.85</span>
+              </div>
+
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+                data-id="5"
+                data-title="Kupluk Trendy"
+                data-price="100"
+                data-img="assets/img/product-5-1.jpg"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-6-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-6-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+
+                <a
+                  href="wishlist.html"
+                  class="action__btn add-to-wishlist-btn"
+                  aria-label="Add To Wishlist"
+                  data-id="6"
+                  data-title="Baju Liburan"
+                  data-price="180"
+                  data-img="assets/img/product-6-1.jpg"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+
+              <div class="product__badge light-pink">-22%</div>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product__title">Pakaian Motif Bewarna</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">238.85</span>
+                <span class="old__price">245.85</span>
+              </div>
+
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+                data-id="6"
+                data-title="Baju Liburan"
+                data-price="180"
+                data-img="assets/img/product-6-1.jpg"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-7-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-7-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+
+                <a
+                  href="wishlist.html"
+                  class="action__btn add-to-wishlist-btn"
+                  aria-label="Add To Wishlist"
+                  data-id="7"
+                  data-title="Outer Untuk Wanita"
+                  data-price="80.00"
+                  data-img="assets/img/product-7-1.jpg"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+
+              <div class="product__badge light-green">Hot</div>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product__title">Pakaian Motif Bewarna</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">238.85</span>
+                <span class="old__price">245.85</span>
+              </div>
+
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+                data-id="7"
+                data-title="Outer Untuk Wanita"
+                data-price="80.00"
+                data-img="assets/img/product-7-1.jpg"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-8-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-8-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+
+              <div class="product__actions">
+                <a
+                  href="details.html"
+                  class="action__btn"
+                  aria-label="Quick View"
+                >
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+
+                <a
+                  href="wishlist.html"
+                  class="action__btn add-to-wishlist-btn"
+                  aria-label="Add To Wishlist"
+                  data-id="8"
+                  data-title="Model Kaos Hensley"
+                  data-price="215.85"
+                  data-img="assets/img/product-8-1.jpg"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+                <a href="compare.html" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product__title">Model Kaos Hensley</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">215.85</span>
+                <span class="old__price">245.85</span>
+              </div>
+
+              <a
+                href="cart.html"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+                data-id="8"
+                data-title="Model Kaos Hensley"
+                data-price="215.85"
+                data-img="assets/img/product-8-1.jpg"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-9-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-9-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+
+                <a
+                  href="wishlist.html"
+                  class="action__btn add-to-wishlist-btn"
+                  aria-label="Add To Wishlist"
+                  data-id="9"
+                  data-title="Pakaian Motif Daun"
+                  data-price="118.00"
+                  data-img="assets/img/product-9-1.jpg"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+
+              <div class="product__badge light-pink">Hot</div>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product__title">Pakaian Motif Bewarna</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">238.85</span>
+                <span class="old__price">245.85</span>
+              </div>
+
+              <a
+                href="cart.html"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+                data-id="9"
+                data-title="Pakaian Motif Daun"
+                data-price="118.00"
+                data-img="assets/img/product-9-1.jpg"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-2-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-2-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+
+                <a href="#" class="action__btn" aria-label="Add To Wishlist">
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+
+              <div class="product__badge light-green">Hot</div>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product__title">Pakaian Motif Bewarna</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">238.85</span>
+                <span class="old__price">245.85</span>
+              </div>
+
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-10-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-10-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+
+                <a
+                  href="wishlist.html"
+                  class="action__btn add-to-wishlist-btn"
+                  aria-label="Add To Wishlist"
+                  data-id="11"
+                  data-title="Sendal Fashionable"
+                  data-price="160.00"
+                  data-img="assets/img/product-10-1.jpg"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+
+              <div class="product__badge light-orange">Hot</div>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product__title">Sendal Fashionable</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">160.00</span>
+                <span class="old__price">245.85</span>
+              </div>
+
+              <a
+                href="cart.html"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+                data-id="11"
+                data-title="Sendal Fashionable"
+                data-price="160.00"
+                data-img="assets/img/product-10-1.jpg"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-4-1.jpg"
+                  alt=""
+                  class="product__img default"
+                />
+              </a>
+
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/product-4-2.jpg"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+
+                <a
+                  href="wishlist.html"
+                  class="action__btn add-to-wishlist-btn"
+                  aria-label="Add To Wishlist"
+                  data-id="4"
+                  data-title="Celana Krem untuk Casual"
+                  data-price="150"
+                  data-img="assets/img/product-4-1.jpg"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+
+              <div class="product__badge light-blue">Hot</div>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Clothing</span>
+              <a href="details.html">
+                <h3 class="product__title">Celana Krem untuk Casual</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">150.85</span>
+                <span class="old__price">245.85</span>
+              </div>
+
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+                data-id="4"
+                data-title="Celana Krem untuk Casual"
+                data-price="150"
+                data-img="assets/img/product-4-1.jpg"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <ul class="pagination">
+          <li><a href="" class="pagination__link active">01</a></li>
+          <li><a href="" class="pagination__link">02</a></li>
+          <li><a href="" class="pagination__link">03</a></li>
+          <li><a href="" class="pagination__link">04</a></li>
+          <li><a href="" class="pagination__link">....</a></li>
+          <li><a href="" class="pagination__link">16</a></li>
+          <li>
+            <a href="" class="pagination__link icon">
+              <i class="fi-rs-angle-double-small-right"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section">
+        <div class="newsletter__container container grid">
+          <h3 class="newsletter__title flex">
+            <img
+              src="assets/img/icon-email.svg"
+              alt=""
+              class="newsletter__icon"
+            />Sign up to Newsletter
+          </h3>
+
+          <p class="newsletter__description">
+            and receive $25 coupon for first shopping.
+          </p>
+
+          <form action="" class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="newsletter__input"
+            />
+            <button type="submit" class="newsletter__btn">subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="assets/img/Logo1.svg" alt="" class="footer_logo-img" />
+          </a>
+
+          <h4 class="footer__subtitle">Contact</h4>
+
+          <p class="footer__description">
+            <span>Alamat:</span> JL. Inpres 1 RT 27 NO 57,Muara Rapak,Balikpapan
+            Utara,Balikpapan
+          </p>
+
+          <p class="footer__description">
+            <span>No Telepon:</span> (+62)857-8787-3449
+          </p>
+
+          <p class="footer__description">
+            <span>Jam Kerja</span> 08.00-20.00 WITA
+          </p>
+
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Follow Me on!</h4>
+            <div class="footer__social-links fle">
+              <a href="https://m.facebook.com/">
+                <img
+                  src="assets/img/icon-facebook.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="https://www.instagram.com/azriela062/">
+                <img
+                  src="assets/img/icon-instagram.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="https://x.com/i/flow/login">
+                <img
+                  src="assets/img/icon-twitter.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="https://www.youtube.com/">
+                <img
+                  src="assets/img/icon-youtube.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="https://id.pinterest.com/">
+                <img
+                  src="assets/img/icon-pinterest.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Address</h3>
+
+          <ul class="footer__links">
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="" class="footer__link">Delivery Information</a></li>
+            <li><a href="" class="footer__link">Privacy Policy</a></li>
+            <li><a href="" class="footer__link">Terms & Condition</a></li>
+            <li>
+              <a
+                href="https://www.instagram.com/azriela062/"
+                class="footer__link"
+                >Contact Us</a
+              >
+            </li>
+            <li><a href="" class="footer__link">Support Center</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">My Account</h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="login-register.html" class="footer__link">Sign In</a>
+            </li>
+            <li>
+              <a href="cart.html" class="footer__link">Lihat Keranjang</a>
+            </li>
+            <li>
+              <a href="wishlist.html" class="footer__link">My Wishlist</a>
+            </li>
+            <li><a href="" class="footer__link">Lacak Pesanan Saya</a></li>
+            <li><a href="" class="footer__link">Bantuan</a></li>
+            <li><a href="accounts.html" class="footer__link">Pesanan</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Secured Payment Gateway</h3>
+
+          <img
+            src="assets/img/payment-method.png"
+            alt=""
+            class="payment__img"
+          />
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="copyright">&copy; 2024 Outdoor All Rights Reserved</p>
+        <span class="designer"
+          >Designed By Kelompok 1 (Muhamad Azriel Maulana)</span
+        >
+      </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/sessionManager.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Menangani tombol "Add to Cart"
+        const cartBtns = document.querySelectorAll(".cart__btn");
+
+        cartBtns.forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            const product = {
+              id: btn.dataset.id,
+              title: btn.dataset.title,
+              price: parseFloat(btn.dataset.price),
+              img: btn.dataset.img,
+              quantity: 1,
+            };
+            addToCart(product);
+            alert(`${product.title} berhasil ditambahkan ke keranjang.`);
+            // Setelah menambahkan produk, perbarui tampilan keranjang di cart.html
+            window.location.href = "cart.html";
+          });
+        });
+
+        function addToCart(product) {
+          let cart = JSON.parse(localStorage.getItem("cart")) || [];
+          const existingProductIndex = cart.findIndex(
+            (item) => item.id === product.id
+          );
+
+          if (existingProductIndex > -1) {
+            cart[existingProductIndex].quantity += 1;
+          } else {
+            cart.push(product);
+          }
+
+          if (cart.length <= 12) {
+            localStorage.setItem("cart", JSON.stringify(cart));
+          } else {
+            alert("Keranjang penuh, tidak bisa menambah lebih dari 12 produk.");
+          }
+        }
+
+        // Menangani tombol "Add to Wishlist"
+        document.querySelectorAll(".add-to-wishlist-btn").forEach((button) => {
+          button.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const productId = this.getAttribute("data-id");
+            const productTitle = this.getAttribute("data-title");
+            const productPrice = this.getAttribute("data-price");
+            const productImg = this.getAttribute("data-img");
+
+            let wishlist = localStorage.getItem("wishlist");
+            wishlist = wishlist ? JSON.parse(wishlist) : [];
+
+            const product = {
+              id: productId,
+              title: productTitle,
+              price: productPrice,
+              img: productImg,
+            };
+
+            // Check if the product already exists in the wishlist
+            if (!wishlist.some((item) => item.id === productId)) {
+              wishlist.push(product);
+              localStorage.setItem("wishlist", JSON.stringify(wishlist));
+              alert("Product added to wishlist successfully!");
+            } else {
+              alert("Product is already in the wishlist!");
+            }
+
+            // Redirect to wishlist.html
+            window.location.href = "wishlist.html";
+          });
+        });
+      });
+    </script>
+
+  </body>
+</html>
